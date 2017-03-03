@@ -17,9 +17,12 @@
     <?php foreach($contacts as $contact) : ?>
     <tr>
       <td><a href="/edit.php?id=<?= $contact['id']; ?>"><?= $contact['id']; ?></a></td>
+      <td><?= $contact['first']; ?></td>
+      <td><?= $contact['last']; ?></td>
       <td><?= $contact['title']; ?></td>
-      <td><?= $contact['priority']; ?></td>
-      <td><?= $contact['title']; ?></td>
+      <td><?= $contact['address']; ?></td>
+      <td><?= $contact['city']; ?></td>
+      <td><?= $contact['state']; ?></td>
     </tr>
     <?php endforeach; ?>
   </tbody>
