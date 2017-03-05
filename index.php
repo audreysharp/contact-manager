@@ -12,6 +12,12 @@
     <th>First Name</th>
     <th>Last Name</th>
     <th>Title</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zip Code</th>
+    <th>Phone Number</th>
+    <th>Notes</th>
   </thead>
   <tbody>
     <?php foreach($contacts as $contact) : ?>
@@ -23,6 +29,9 @@
       <td><?= $contact['address']; ?></td>
       <td><?= $contact['city']; ?></td>
       <td><?= $contact['state']; ?></td>
+      <td><?= $contact['zip']; ?></td>
+      <td><?= $contact['phone']; ?></td>
+      <td><?= $contact['notes']; ?></td>
     </tr>
     <?php endforeach; ?>
   </tbody>
