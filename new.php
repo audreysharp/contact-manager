@@ -4,23 +4,23 @@
 
 ?>
 
-<h1>Create Task</h1>
+<h1>Create Contact</h1>
 
 <form method="POST" action="/create.php">
 
   <div class="form-group">
-    <label for="task_title">Title</label>
-    <input class="form-control" type="text" name="title" id="task_title" value="" placeholder="Task Title" />
+    <label for="contact_title">Title</label>
+    <input class="form-control" type="text" name="title" id="contact_title" value="" placeholder="Contact Title" />
   </div>
 
   <div class="form-group">
-    <label for="task_description">Description</label>
-    <textarea class="form-control" name="description" id="task_description" placeholder="Task Description"></textarea>
+    <label for="contact_description">Description</label>
+    <textarea class="form-control" name="description" id="contact_description" placeholder="Contact Description"></textarea>
   </div>
 
   <div class="form-group">
-    <label for="task_priority">Priority</label>
-    <select name="priority" id="task_priority" value="3" class="form-control">
+    <label for="contact_priority">Priority</label>
+    <select name="priority" id="contact_priority" value="3" class="form-control">
       <option value="1">1</option>
       <option value="2">2</option>
       <option value="3" selected>3</option>
@@ -39,7 +39,7 @@
     </label>
   </div>
 
-  <button class="btn btn-primary">Create New Task</button>
+  <button class="btn btn-primary">Create New Contact</button>
 </form>
 
 <?php include 'footer.php'; ?>
