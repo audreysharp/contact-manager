@@ -3,7 +3,7 @@
   include 'header.php';
   $id = $_GET['id'];
 
-  $stmt = $db->prepare('SELECT * from contacts WHERE id = :id LIMIT 1');
+  $stmt = $db->prepare('SELECT * from contacts WHERE id = :id LIMIT 1'); // get contact to edit by ID
   $stmt->bindParam(':id', $id);
   $stmt->execute();
 
@@ -11,21 +11,25 @@
 
 ?>
 
+<!--Alert message to display if contact updated-->
 <?php if (array_key_exists('updated', $_GET)) : ?>
 <div class="alert alert-success">
   <p><strong>Update successful!</strong> Your contact was updated.</p>
 </div>
 <?php endif; ?>
 
-<div class="row">
+<a href="/delete.php?id=<?= $contact['id']; ?>" class="button button-outline button-small button-delete">Delete Contact</a>
+<h1>Edit Contact</h1>
+<!--<div class="row">
   <div class="column column-80">
     <h1>Edit Contact</h1>
   </div>
   <div class="column column-10">
     <a href="/delete.php?id=<?= $contact['id']; ?>" class="button button-outline button-small button-delete">Delete Contact</a>
   </div>
-</div>
+</div>-->
 
+<!--Edit contact form-->
 <form method="POST" action="/update.php">
   <input type="hidden" name="id" id="contact_id" value="<?= $contact['id']; ?>" />
 

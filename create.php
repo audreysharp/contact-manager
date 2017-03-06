@@ -6,7 +6,7 @@
     (first, last, title, address, city, state, zip, phone, notes)
     VALUES
     (:first, :last, :title, :address, :city, :state, :zip, :phone, :notes)
-  ');
+  '); // create contact with bound values
 
   $stmt->execute(array(
     ':first' => $_POST['first'],

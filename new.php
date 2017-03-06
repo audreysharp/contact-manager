@@ -6,6 +6,7 @@
 
 <h1>Create Contact</h1>
 
+<!--Create contact form-->
 <form method="POST" action="/create.php">
 
   <div class="form-group">

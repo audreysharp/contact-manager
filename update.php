@@ -4,7 +4,7 @@ include 'database.php';
 
 $stmt = $db->prepare('UPDATE contacts SET 
   first = :first, last = :last, title = :title, address = :address, city = :city, state = :state, zip = :zip, phone = :phone, notes = :notes
-  WHERE id = :id');
+  WHERE id = :id'); // update contact with user-entered information
 
 $stmt->execute(array(
   ':first' => $_POST['first'],
