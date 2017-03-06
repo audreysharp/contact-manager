@@ -18,6 +18,13 @@
 </div>
 <?php endif; ?>
 
+<!--Alert message to display if contact created-->
+<?php if (array_key_exists('created', $_GET)) : ?>
+  <div class="alert alert-success">
+    <p><strong>Contact created!</strong> Your contact was successfully created.</p>
+  </div>
+<?php endif; ?>
+
 <a href="/delete.php?id=<?= $contact['id']; ?>" class="button button-outline button-small button-delete">Delete Contact</a>
 <h1>Edit Contact</h1>
 <!--<div class="row">
@@ -138,7 +145,7 @@
     <textarea class="form-control" name="notes" id="contact_notes"><?= $contact['notes']; ?></textarea>
   </div>
 
-  <button class="btn btn-primary">Save Contact</button>
+  <button class="button">Save Contact</button>
 </form>
 
 <?php include 'footer.php'; ?>
