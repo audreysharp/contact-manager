@@ -27,14 +27,6 @@
 
 <a href="/delete.php?id=<?= $contact['id']; ?>" class="button button-outline button-small button-delete">Delete Contact</a>
 <h1>Edit Contact</h1>
-<!--<div class="row">
-  <div class="column column-80">
-    <h1>Edit Contact</h1>
-  </div>
-  <div class="column column-10">
-    <a href="/delete.php?id=<?= $contact['id']; ?>" class="button button-outline button-small button-delete">Delete Contact</a>
-  </div>
-</div>-->
 
 <!--Edit contact form-->
 <form method="POST" action="/update.php">
@@ -128,7 +120,7 @@
             <option value="WY">Wyoming</option>
           </select>
       </div>
-      <div class="column column-33">
+      <div class="column">
         <label for="contact_zip">Zip Code</label>
         <input class="form-control" type="text" name="zip" id="contact_zip" value="<?= $contact['zip']; ?>" />
       </div>
@@ -147,5 +139,7 @@
 
   <button class="button">Save Contact</button>
 </form>
+
+<br><br><br>
 
 <?php include 'footer.php'; ?>

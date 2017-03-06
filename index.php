@@ -25,20 +25,20 @@
 <h1>All Contacts <span class="text-muted">(<?= count($contacts); ?>)</span></h1>
 <table class="table">
   <thead>
-    <th>ID</th>
-    <th><a href="/index.php?sortFirst=<?= ($sortFirst === null || $sortFirst === 'desc') ? 'asc' : 'desc'; ?>">First Name</th>
-    <th><a href="/index.php?sortLast=<?= ($sortLast === null || $sortLast === 'desc') ? 'asc' : 'desc'; ?>">Last Name</a></th>
-    <th>City</th>
-    <th>State</th>
+    <th class="contactId">ID</th>
+    <th class="first"><a href="/index.php?sortFirst=<?= ($sortFirst === null || $sortFirst === 'desc') ? 'asc' : 'desc'; ?>">First Name</th>
+    <th class="last"><a href="/index.php?sortLast=<?= ($sortLast === null || $sortLast === 'desc') ? 'asc' : 'desc'; ?>">Last Name</a></th>
+    <th class="city">City</th>
+    <th class="state">State</th>
   </thead>
   <tbody>
     <?php foreach($contacts as $contact) : ?>
     <tr>
-      <td><a href="/edit.php?id=<?= $contact['id']; ?>"><?= $contact['id']; ?></a></td>
-      <td><?= $contact['first']; ?></td>
-      <td><?= $contact['last']; ?></td>
-      <td><?= $contact['city']; ?><br>
-      <td><?= $contact['state']; ?></td>
+      <td class="contactId"><a href="/edit.php?id=<?= $contact['id']; ?>"><?= $contact['id']; ?></a></td>
+      <td class="first"><?= $contact['first']; ?></td>
+      <td class="last"> <?= $contact['last']; ?></td>
+      <td class="city"><?= $contact['city']; ?><br>
+      <td class="state"><?= $contact['state']; ?></td>
     </tr>
     <?php endforeach; ?>
   </tbody>

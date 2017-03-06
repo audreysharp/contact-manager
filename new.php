@@ -97,7 +97,7 @@
             <option value="WY">Wyoming</option>
           </select>
       </div>
-      <div class="column column-33">
+      <div class="column">
         <label for="contact_zip">Zip Code</label>
         <input class="form-control" type="text" name="zip" id="contact_zip" value="" placeholder="Zip Code" />
       </div>
@@ -116,5 +116,7 @@
 
   <button class="button">Create New Contact</button>
 </form>
+
+<br><br><br>
 
 <?php include 'footer.php'; ?>

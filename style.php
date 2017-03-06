@@ -22,10 +22,10 @@
 <h4>Examples:</h4>
 
 <h1>h1. A very large header</h1>
-<h2>h2. Another large header.</h2>
-<h3>h3. Another header.</h3>
-<h4>h4. A slightly smaller header.</h4>
-<h5>h5. A smaller header.</h5>
+<h2>h2. Another large header</h2>
+<h3>h3. Another header</h3>
+<h4>h4. A slightly smaller header</h4>
+<h5>h5. A smaller header</h5>
 
 <p><b>A paragraph.</b> Proin scelerisque sed turpis id suscipit. Duis vitae nibh id risus tristique tristique. Duis non posuere mi, nec tincidunt lectus. Praesent in ex quis libero dictum porta. Curabitur efficitur, purus vel egestas vestibulum, eros nunc rutrum ipsum, eget interdum diam turpis sed nibh.
 </p>
