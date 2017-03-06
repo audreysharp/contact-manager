@@ -7,6 +7,7 @@ $stmt = $db->prepare('UPDATE contacts SET
   WHERE id = :id'); // update contact with user-entered information
 
 $stmt->execute(array(
+  ':id' => $_POST['id'],
   ':first' => $_POST['first'],
   ':last' => $_POST['last'],
   ':title' => $_POST['title'],
