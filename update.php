@@ -18,4 +18,4 @@ $stmt->execute(array(
   ':notes' => $_POST['notes']
 ));
 
-header('Location: http://localhost:8080/edit.php?updated=true&id=' . $_POST['id']);
+header('Location: http://localhost:8888/edit.php?updated=true&id=' . $_POST['id']);

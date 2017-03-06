@@ -5,8 +5,20 @@
 
 ?>
 
+<?php if (array_key_exists('deleted', $_GET)) : ?>
+  <div class="alert alert-danger">
+    <p><strong>Contact Deleted!</strong> The contact was removed.</p>
+  </div>
+<?php endif; ?>
+
+<?php if (array_key_exists('created', $_GET)) : ?>
+  <div class="alert alert-success">
+    <p><strong>Contact created!</strong> Your contact was successfully created.</p>
+  </div>
+<?php endif; ?>
+
 <h1>All Contacts <span class="text-muted">(<?= count($contacts); ?>)</span></h1>
-<table class="table table-hover">
+<table class="table">
   <thead>
     <th>ID</th>
     <th>First Name</th>
@@ -31,7 +43,8 @@
       <td><?= $contact['state']; ?></td>
       <td><?= $contact['zip']; ?></td>
       <td><?= $contact['phone']; ?></td>
-      <td><?= $contact['notes']; ?></td>
+      <td><?= $contact['zip']; ?></td>
+      <!--<td><?= $contact['notes']; ?></td>-->
     </tr>
     <?php endforeach; ?>
   </tbody>

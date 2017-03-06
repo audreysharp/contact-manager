@@ -7,6 +7,6 @@
     ':id' => $_GET['id']
   ));
 
-  header('Location: http://localhost:8080/index.php?deleted=true');
+  header('Location: http://localhost:8888/index.php?deleted=true');
 
 ?>

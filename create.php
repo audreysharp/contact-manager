@@ -6,7 +6,7 @@
     (first, last, title, address, city, state, zip, phone, notes)
     VALUES
     (:first, :last, :title, :address, :city, :state, :zip, :phone, :notes)
-  '');
+  ');
 
   $stmt->execute(array(
     ':first' => $_POST['first'],
@@ -22,5 +22,5 @@
 
   $id = $db->lastInsertId();
 
-  header('Location: http://localhost:8080/edit.php?id=' . $id . '&created=true');
+  header('Location: http://localhost:8888/index.php?created=true');
 ?>
