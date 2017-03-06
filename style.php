@@ -71,11 +71,3 @@
 </ol>
 
 <?php include 'footer.php'; ?>
-
-<!-- Should include style for the following elements: h1, h2, h3, h4, h5; p, p.lead,
-p.light; .button.small, .button.medium, .button.large; text input, 
-select input, textarea input; ul, li, ol, li
-
- Should show a color scheme for the website
- - Should show header font (at least 3 weights)
- - Should show body font (at least 2 weights) -->
