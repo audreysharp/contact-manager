@@ -30,7 +30,6 @@
     <th><a href="/index.php?sortLast=<?= ($sortLast === null || $sortLast === 'desc') ? 'asc' : 'desc'; ?>">Last Name</a></th>
     <th>City</th>
     <th>State</th>
-    <th>Phone Number</th>
   </thead>
   <tbody>
     <?php foreach($contacts as $contact) : ?>
@@ -40,7 +39,6 @@
       <td><?= $contact['last']; ?></td>
       <td><?= $contact['city']; ?><br>
       <td><?= $contact['state']; ?></td>
-      <td><?= $contact['phone']; ?></td>
     </tr>
     <?php endforeach; ?>
   </tbody>
