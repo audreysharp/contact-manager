@@ -140,6 +140,4 @@
   <button class="button">Save Contact</button>
 </form>
 
-<br><br><br>
-
 <?php include 'footer.php'; ?>

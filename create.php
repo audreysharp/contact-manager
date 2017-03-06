@@ -22,5 +22,5 @@
 
   $id = $db->lastInsertId();
 
-  header('Location: http://localhost:8080/edit.php?id=' . $id . '&created=true');
+  header('Location: http://localhost:8888/edit.php?id=' . $id . '&created=true');
 ?>

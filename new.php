@@ -117,6 +117,4 @@
   <button class="button">Create New Contact</button>
 </form>
 
-<br><br><br>
-
 <?php include 'footer.php'; ?>

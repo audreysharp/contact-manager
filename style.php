@@ -70,7 +70,6 @@
   <li>Ordered list item 2</li>
 </ol>
 
-<br><br><br><br>
 <?php include 'footer.php'; ?>
 
 <!-- Should include style for the following elements: h1, h2, h3, h4, h5; p, p.lead,
