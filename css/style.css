@@ -73,6 +73,18 @@ textarea.form-control {
   text-align: right;
 }
 
+.nav-left {
+  float: left;
+  margin-top: -5px;
+  font-size: 18px;
+}
+
+.nav-right {
+  float: right;
+  padding-left: 12px;
+  font-size: 13px;
+}
+
 /* Alerts for create/update/delete */
 .alert {
   padding: 8px 14px 0px 14px;
@@ -115,7 +127,7 @@ textarea.form-control {
   bottom: 0;
   right: 0;
   left: 0;
-  height: 90px;
+  height: 72px;
   font-size: 12px;
   width: 100%;
   padding: 1rem;

@@ -24,8 +24,9 @@
       <!--Navigation-->
       <div class="nav-wrapper">
         <nav>
-        <a href="/index.php">all contacts</a> •
-        <a href="/new.php">add contact</a>
+        <span class="nav nav-left">Contacts Manager</span>
+        <span class="nav nav-right"><a href="/new.php">New Contact</a></span>
+        <span class="nav nav-right"><a href="/index.php">All Contacts</a></span>
         </nav>
       </div>
 

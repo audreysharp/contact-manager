@@ -9,7 +9,7 @@
     $contacts = $db->query('SELECT * FROM contacts ORDER BY last ' . $sortLast)->fetchAll(PDO::FETCH_ASSOC);
   } else if ($sortFirst !== null) { // sort by first name
     $contacts = $db->query('SELECT * FROM contacts ORDER BY first ' . $sortFirst)->fetchAll(PDO::FETCH_ASSOC);
-  } else {
+  } else { // don't sort'
     $contacts = $db->query('SELECT * FROM contacts')->fetchAll(PDO::FETCH_ASSOC);
   }
 
