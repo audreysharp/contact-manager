@@ -36,10 +36,10 @@
     <?php foreach($contacts as $contact) : ?>
     <tr>
       <td class="contactId"><a href="/edit.php?id=<?= $contact['id']; ?>"><?= $contact['id']; ?></a></td>
-      <td class="first"><?= $contact['first']; ?></td>
-      <td class="last"> <?= $contact['last']; ?></td>
-      <td class="city"><?= $contact['city']; ?><br>
-      <td class="state"><?= $contact['state']; ?></td>
+      <td class="first"><a href="/edit.php?id=<?= $contact['id']; ?>"><?= $contact['first']; ?></a></td>
+      <td class="last"><a href="/edit.php?id=<?= $contact['id']; ?>"><?= $contact['last']; ?></a></td>
+      <td class="city"><a href="/edit.php?id=<?= $contact['id']; ?>"><?= $contact['city']; ?></a><br>
+      <td class="state"><a href="/edit.php?id=<?= $contact['id']; ?>"><?= $contact['state']; ?></a></td>
     </tr>
     <?php endforeach; ?>
   </tbody>

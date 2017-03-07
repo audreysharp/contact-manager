@@ -6,24 +6,28 @@
 
 <h1>Styles</h1>
 
-<h3><b>Colors</b></h3>
+<h3 class="style-heading"><b>Colors</b></h3>
 <div><div class="box violet"></div> #9B4DCA <br>
-<div class="box grey"></div> #606C76 <br>
-<div class="box purple"></div> #F3E0FF
-
+<div class="box gray"></div> #606C76 <br>
+<div class="box purple"></div> #F3E0FF <br>
+<div class="box dark-purple"></div> #4D2665
 <br><br>
 
-<h3><b>Typography</b></h3>
+<h3 class="style-heading"><b>Typography</b></h3>
 
 <h3>Roboto Light</h3>
 <h3 class="text-regular">Roboto Regular</h3>
 <h3><b>Roboto Bold</b></h3>
 
-<h4>Examples:</h4>
+<h3 class="raleway-light">Raleway Light</h3>
+<h3 class="raleway">Raleway Regular</h3>
+<h3 class="raleway-bold">Raleway Bold</h3>
 
-<h1>h1. A very large header</h1>
-<h2>h2. Another large header</h2>
-<h3>h3. Another header</h3>
+<h4 class="dark-purple-text">Examples:</h4>
+
+<h1 color="">h1. A very large header</h1>
+<h2 style="color:#9B4DCA">h2. ANOTHER LARGE HEADER</h2>
+<h3 class="dark-purple-text"><b>h3. Another header</b></h3>
 <h4>h4. A slightly smaller header</h4>
 <h5>h5. A smaller header</h5>
 
@@ -32,14 +36,15 @@
 <p class="lead"><b>p.lead paragraph.</b> Morbi vitae bibendum neque, id egestas enim. Etiam fermentum gravida orci, quis rhoncus purus aliquam non. Maecenas sit amet sapien sit amet ligula dapibus rhoncus. Nulla consectetur egestas tempor..</p>
 <p class="light text-muted"><b>p.light-text paragraph.</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc risus erat, vulputate vel commodo et, rutrum eu dolor. Curabitur id mauris a odio condimentum pretium. In eget aliquam tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-<h3><b>Buttons</b></h3>
+<h3 class="style-heading"><b>Buttons</b></h3>
 <a class="button button-large" href="#">Large Button</a><br>
 <a class="button" href="#">Medium Button</a><br>
-<a class="button button-small" href="#">Small Button</a>
+<a class="button button-small" href="#">Small Button</a><br>
+<a class="button button-outline button-small" href="#">Delete Button</a>
 
 <br><br>
 
-<h3><b>Input</b></h3>
+<h3 class="style-heading"><b>Input</b></h3>
 <form>
   <fieldset>
     <label for="textInput">Text Input</label>
@@ -56,7 +61,7 @@
   </fieldset>
 </form>
 
-<h3><b>Lists</b></h3>
+<h3 class="style-heading"><b>Lists</b></h3>
 
 <!-- Unordered list -->
 <ul>
@@ -69,5 +74,7 @@
   <li>Ordered list item 1</li>
   <li>Ordered list item 2</li>
 </ol>
+
+<br><br><br>
 
 <?php include 'footer.php'; ?>

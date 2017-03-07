@@ -8,6 +8,10 @@
   float: right;
 }
 
+h1 {
+  color: #4D2665;
+}
+
 /*Styling for desktop devices*/
 @media (min-width: 40.0rem) { 
   .row .column-main {
@@ -56,7 +60,7 @@ textarea.form-control {
 }
 
 .text-muted {
-  color: rgba(96, 108, 118, 0.6)
+  color: #a692b2;
 }
 
 /* Make navigation bar fixed at top */
@@ -89,12 +93,12 @@ textarea.form-control {
 .alert {
   padding: 8px 14px 0px 14px;
   margin-bottom: 18px;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   background-color: #F3E0FF;
   border: 1px solid #9B4DCA;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  padding-top: 25px;
 }
 
 .alert-success {
@@ -104,9 +108,12 @@ textarea.form-control {
 }
 
 .alert-danger {
-
+  background-color: #4D2665;
+  color: #F3E0FF;
+  border-color: #9B4DCA;
 }
 
+/* Button sizes */
 .button-small {
   font-size: .8rem;
   height: 2.8rem;
@@ -117,8 +124,8 @@ textarea.form-control {
 
 .button-large {
   font-size: 1.4rem;
-  height: 4.5rem;
-  line-height: 4.5rem;
+  height: 6rem;
+  line-height: 6rem;
   padding: 0 2rem;
 }
 
@@ -127,19 +134,22 @@ textarea.form-control {
   bottom: 0;
   right: 0;
   left: 0;
-  height: 72px;
+  height: 85px;
   font-size: 12px;
   width: 100%;
-  padding: 1rem;
+  padding: 1.5rem;
   background-color: #F3E0FF;
   text-align: center;
 }
 
+/* Style guide elements */
+
+/* Color boxes */
 .box {
   display: inline-block;
   width: 20px;
-  height: 20px;
-  margin: 5px;
+  height: 15px;
+  margin: 0px;
   border: 1px solid rgba(0, 0, 0, .2);
 }
 
@@ -155,11 +165,39 @@ textarea.form-control {
   background-color: #F3E0FF;
 }
 
+.dark-purple {
+  background-color: #4d2665;
+}
+
+.dark-purple-text {
+  color: #4d2665;
+}
+
+.style-heading {
+  color: #4d2665;
+  border-bottom: 1px solid #4D2665;
+}
+
 .text-regular {
-  font: Roboto;
+  font-family: Roboto;
   font-weight: 400;
 }
 
 .lead {
   font-weight: 400;
+}
+
+.raleway {
+  font-family: Raleway;
+  font-weight: 400;
+}
+
+.raleway-light {
+  font-family: Raleway;
+  font-weight: 300;
+}
+
+.raleway-bold {
+  font-family: Raleway;
+  font-weight: 700;
 }
